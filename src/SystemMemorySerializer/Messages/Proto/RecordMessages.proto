@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package SystemMemorySerializer.Messages.Proto;
+
+message RecordA{
+    string Id = 1;
+    int64 Timestamp = 2;
+}
+
+message RecordB {
+    string Id = 1;
+    repeated RecordA RecordAs = 2;
+}

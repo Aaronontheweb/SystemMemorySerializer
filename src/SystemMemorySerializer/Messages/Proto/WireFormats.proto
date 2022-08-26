@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package SystemMemorySerializer.Messages.Proto;
+
+message WireMessage{
+    int32 SerializerId = 1;
+    string Manifest = 2;
+    bytes Message = 3;
+}

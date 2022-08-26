@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>$(LibraryFramework)</TargetFramework>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+    <Description>System.Memory serializer prototypes</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.21.5" />
+    <PackageReference Include="CommunityToolkit.HighPerformance" Version="8.0.0" />
+    <PackageReference Include="System.IO.Pipelines" Version="6.0.3" />
+    <PackageReference Include="Grpc.Tools" Version="2.48.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Protobuf Include="Messages\Proto\RecordMessages.proto" GrpcServices="None" />
+  </ItemGroup>
+
+</Project>

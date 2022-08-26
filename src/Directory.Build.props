@@ -1,7 +1,7 @@
 ﻿<Project>
   <PropertyGroup>
-    <Copyright>Copyright © 2022 Your Company</Copyright>
-    <Authors>Your Authors</Authors>
+    <Copyright>Copyright © 2022 Aaron Stannard</Copyright>
+    <Authors>Aaron Stannard</Authors>
     <VersionPrefix>0.3.0</VersionPrefix>
     <PackageReleaseNotes>• Fixed bugs</PackageReleaseNotes>
     <PackageIconUrl>
