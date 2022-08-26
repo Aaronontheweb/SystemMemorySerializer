@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>$(LibraryFramework)</TargetFramework>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-    <Description>Your description here.</Description>
+    <Description>System.Memory serializer prototypes</Description>
   </PropertyGroup>
 	
 
