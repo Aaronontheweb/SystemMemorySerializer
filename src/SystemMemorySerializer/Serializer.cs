@@ -4,18 +4,14 @@ namespace SystemMemorySerializer
 {
     public abstract class Serializer
     {
-        protected Serializer(short identifier)
+        protected Serializer()
         {
-            Identifier = identifier;
+            Identifier = 1;
         }
 
         public virtual short Identifier { get; }
-        
-        public abstract bool IncludeManifest { get; }
 
-        public abstract IMemoryOwner<byte> ToBinary(object obj);
-
-        public abstract string ToManifest(object obj);
+        public abstract string ToBinary(IBufferWriter<byte> bufferWriter, object obj);
 
         public abstract object FromBinary(IMemoryOwner<byte> memory, string manifest);
     }
