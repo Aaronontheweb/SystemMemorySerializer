@@ -11,7 +11,7 @@ public class RecordSerializer : Serializer
     public const string RecordAManifest = "RA";
     public const string RecordBManifest = "RB";
 
-    public override short Identifier => 101;
+    public override int Identifier => 101;
 
     public override string ToBinary(IBufferWriter<byte> bufferWriter, object obj)
     {

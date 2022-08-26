@@ -9,7 +9,7 @@ namespace SystemMemorySerializer
             Identifier = 1;
         }
 
-        public virtual short Identifier { get; }
+        public virtual int Identifier { get; }
 
         public abstract string ToBinary(IBufferWriter<byte> bufferWriter, object obj);
 
